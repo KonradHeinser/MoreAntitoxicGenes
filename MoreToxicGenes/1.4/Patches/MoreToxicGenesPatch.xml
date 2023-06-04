@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationRemove" MayRequire="sarg.alphagenes">
+                <xpath>/Defs/GeneDef[defName="AG_ToxicEnvironmentResistance_Frail"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="sarg.alphagenes">
+                <xpath>/Defs/GeneDef[defName="AG_ToxResist_Vulnerability"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
