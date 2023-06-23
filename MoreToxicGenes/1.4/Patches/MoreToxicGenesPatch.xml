@@ -2,11 +2,17 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-            <li Class="PatchOperationRemove" MayRequire="sarg.alphagenes">
-                <xpath>/Defs/GeneDef[defName="AG_ToxicEnvironmentResistance_Frail"]</xpath>
+            <li Class="PatchOperationAdd" MayRequire="sarg.alphagenes">
+                <xpath>/Defs/GeneDef[defName="AG_ToxicEnvironmentResistance_Frail"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+			    <value>
+				    <hideGene>true</hideGene>
+			    </value>
             </li>
-            <li Class="PatchOperationRemove" MayRequire="sarg.alphagenes">
-                <xpath>/Defs/GeneDef[defName="AG_ToxResist_Vulnerability"]</xpath>
+            <li Class="PatchOperationAdd" MayRequire="sarg.alphagenes">
+                <xpath>/Defs/GeneDef[defName="AG_ToxResist_Vulnerability"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+			    <value>
+				    <hideGene>true</hideGene>
+			    </value>
             </li>
         </operations>
     </Operation>
