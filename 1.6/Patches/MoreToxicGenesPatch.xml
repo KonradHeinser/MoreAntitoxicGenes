@@ -3,13 +3,13 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationAdd" MayRequire="sarg.alphagenes">
-                <xpath>/Defs/GeneDef[defName="AG_ToxicEnvironmentResistance_Frail"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+                <xpath>Defs/GeneDef[defName="AG_ToxicEnvironmentResistance_Frail"]/modExtensions/li[@Class="VEF.Genes.GeneExtension"]</xpath>
 			    <value>
 				    <hideGene>true</hideGene>
 			    </value>
             </li>
             <li Class="PatchOperationAdd" MayRequire="sarg.alphagenes">
-                <xpath>/Defs/GeneDef[defName="AG_ToxResist_Vulnerability"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+                <xpath>Defs/GeneDef[defName="AG_ToxResist_Vulnerability"]/modExtensions/li[@Class="VEF.Genes.GeneExtension"]</xpath>
 			    <value>
 				    <hideGene>true</hideGene>
 			    </value>
